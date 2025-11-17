@@ -22,7 +22,7 @@ phases:
       - docker push $REPOSITORY_URI:$TAG
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions...
-      - printf '[{"name":"aws-devops-project","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > imagedefinitions.json
+      - printf '[{"name":"aws-devops","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > imagedefinitions.json
 
 artifacts:
   files:
