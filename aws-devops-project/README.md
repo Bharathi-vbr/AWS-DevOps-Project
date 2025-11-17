@@ -1,16 +1,51 @@
-# React + Vite
+React + Vite App
+This folder contains a minimal setup for a React application built using Vite—optimized for fast dev experience and CI/CD automation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Structure
+/public: Static assets
 
-Currently, two official plugins are available:
+/src: Source code (React components)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dockerfile: Production build steps for containerization
 
-## React Compiler
+package.json, package-lock.json: Project metadata and dependencies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+vite.config.js: Vite build configuration
 
-## Expanding the ESLint configuration
+Getting Started
+Install dependencies
+Make sure you have Node.js & npm installed. Then:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+text
+npm install
+Run the development server
+text
+npm run dev
+Build a production bundle
+text
+npm run build
+Preview the production build locally
+text
+npm run preview
+Main Dependencies
+React
+
+Vite
+
+ESLint (with custom config for linting)
+
+Docker
+Build the Docker image for the app:
+
+text
+docker build -t aws-devops-app .
+Run the container locally:
+
+text
+docker run -p 80:80 aws-devops-app
+Notes:
+
+For TypeScript setup, see Vite + React TS Template.
+
+Project is CI/CD-ready—see the root infrastructure documentation for automated build & deployment flow.
+
