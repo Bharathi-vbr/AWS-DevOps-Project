@@ -1,6 +1,7 @@
 ## AWS CI-CD: React App on AWS ECS Fargate
 
-<img width="845" height="475" alt="Screenshot 2025-11-17 at 6 53 03 PM" src="https://github.com/user-attachments/assets/cdebd580-b4f2-4357-8d24-7b28978d60ae" />
+<img width="845" height="475" alt="Screenshot 2025-11-17 at 6 53 03 PM" src="https://github.com/user-attachments/assets/15c5996f-4db6-4407-969b-0e95e20822d3" />
+
 
 <img width="768" height="731" alt="Screenshot 2025-11-16 at 7 43 35 PM" src="https://github.com/user-attachments/assets/dfaff7c6-ef2c-48fe-b882-f19e3353ba46" />
 
